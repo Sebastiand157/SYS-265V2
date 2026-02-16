@@ -18,7 +18,7 @@ sudo useradd -m -s /bin/bash "$username"
 sudo mkdir -p /home/"$username"/.ssh
 sudo cp /home/seb/SYS265V2/linux/public-keys/id_rsa.pub /home/"$username"/.ssh/authorized_keys
 sudo chmod 700 /home/"$username"/.ssh
-sudo chmod 600 /home/"username"/.ssh/authorized_keys
+sudo chmod 600 /home/"$username"/.ssh/authorized_keys
 sudo chown -R "$username:$username" /home/"$username"/.ssh
 
 echo "Passwordless user '$username' has been made with an associated private key."
